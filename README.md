@@ -1,46 +1,49 @@
-# 📊 Student Performance Analytics with R
+# Student Performance Analytics with R
 
-> Applying descriptive and inferential statistics in R to analyze educational data and support evidence-based decision-making.
+Applying descriptive and inferential statistical techniques in R to analyze educational data, identify behavioral patterns, and generate reproducible analytical reports that support evidence-based decision making.
 
-![R](https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white)
-![Statistics](https://img.shields.io/badge/Statistics-Inferential-blue?style=for-the-badge)
-![Data Analysis](https://img.shields.io/badge/Data-Analysis-success?style=for-the-badge)
-![EDA](https://img.shields.io/badge/EDA-Exploratory-orange?style=for-the-badge)
+---
+
+<p align="center">
+<b>PROJECT BANNER</b>
+
+<!-- Replace with project_banner.png -->
+</p>
 
 ---
 
 # Project Overview
 
-Educational institutions collect large amounts of student information every semester. However, collecting data alone is not enough. Statistical analysis is essential for transforming raw data into meaningful information that supports evidence-based decision-making.
+Educational institutions continuously collect information about their students; however, transforming raw data into meaningful insights requires a structured statistical analysis process.
 
-This project demonstrates how descriptive statistics, probability distributions, sampling techniques, and data visualization can be applied using **R** to analyze educational data and generate actionable insights.
+This project demonstrates how R can be used to perform descriptive statistics, probability modeling, sampling analysis, and data visualization using a real-world educational dataset.
 
-Rather than presenting isolated statistical exercises, this repository organizes the complete analysis as a reproducible data analytics project.
+The objective is not only to calculate statistical measures but also to organize the complete workflow as a reproducible data analytics project following professional software development practices.
 
 ---
 
 # Business Problem
 
-Educational organizations often need to answer questions such as:
+Educational organizations need reliable statistical evidence to understand student characteristics, study habits, and satisfaction levels.
+
+This project applies descriptive and inferential statistical methods to answer questions such as:
 
 - How much time do students dedicate to studying?
-- How satisfied are students with their academic programs?
-- How variable are student behaviors?
-- Can a small sample accurately represent the entire population?
-- How can probability models support decision-making under uncertainty?
-
-This project addresses these questions using statistical methods implemented in R.
+- What is the overall satisfaction level?
+- How representative are random samples?
+- How can probability models support decision making?
 
 ---
 
 # Project Objectives
 
+- Import and prepare raw data using R.
 - Perform descriptive statistical analysis.
 - Apply probability distributions.
-- Demonstrate sampling techniques.
-- Generate reproducible reports.
-- Produce publication-quality visualizations.
-- Organize the complete workflow following professional data analytics practices.
+- Evaluate sampling accuracy.
+- Generate statistical reports automatically.
+- Produce publication-ready visualizations.
+- Organize the complete analysis as a reproducible project.
 
 ---
 
@@ -50,42 +53,60 @@ The dataset contains information collected from **250 university students**.
 
 Variables include:
 
-- Gender
 - Age
+- Gender
 - Height
 - Weight
 - Weekly study hours
 - Weekly food expenses
-- Number of approved courses
+- Approved courses
 - Career satisfaction
-- Smoking habits
 - Employment status
+- Smoking habits
 - Number of siblings
 
 ---
 
-# Project Workflow
+# Analytical Workflow
 
 ```text
 Student Survey Dataset
-          │
-          ▼
+
+        │
+
+        ▼
+
 Data Import
-          │
-          ▼
+
+        │
+
+        ▼
+
 Descriptive Statistics
-          │
-          ▼
+
+        │
+
+        ▼
+
 Probability Models
-          │
-          ▼
+
+        │
+
+        ▼
+
 Sampling Analysis
-          │
-          ▼
+
+        │
+
+        ▼
+
 Data Visualization
-          │
-          ▼
-Statistical Reports
+
+        │
+
+        ▼
+
+Reports
 ```
 
 ---
@@ -107,7 +128,7 @@ student-performance-analytics-r/
 │     05_visualizations.R
 │
 ├── reports/
-│     Statistical output tables (.csv)
+│     Generated CSV reports
 │
 ├── images/
 │     Generated visualizations
@@ -121,12 +142,10 @@ student-performance-analytics-r/
 
 ## Descriptive Statistics
 
-- Frequency tables
+- Frequency distributions
 - Measures of central tendency
 - Measures of dispersion
 - Quartiles
-
----
 
 ## Probability Models
 
@@ -134,17 +153,11 @@ student-performance-analytics-r/
 - Poisson Distribution
 - Normal Distribution
 
----
-
 ## Sampling Analysis
 
-Simple Random Sampling
-
-Population vs Sample Comparison
-
-Sampling Mean Analysis
-
----
+- Simple Random Sampling
+- Population vs Sample Comparison
+- Sampling Mean Estimation
 
 ## Data Visualization
 
@@ -154,22 +167,22 @@ Sampling Mean Analysis
 
 ---
 
-# Key Findings
+# Key Results
 
-The analysis provides several insights regarding student behavior:
+The statistical analysis identified several relevant findings:
 
 - Most students dedicate between **9 and 13 hours per week** to studying.
-- Student satisfaction is predominantly classified as **Very Satisfied**.
-- Sample means closely approximate the population mean, demonstrating the reliability of statistical sampling.
-- Probability models illustrate how inferential statistics can support decision-making under uncertainty.
+- Career satisfaction is predominantly classified as **Very Satisfied**.
+- Random samples accurately estimate the population mean.
+- Probability models demonstrate practical applications of inferential statistics.
 
 ---
 
 # Generated Reports
 
-The project automatically generates statistical outputs in CSV format.
+The project automatically exports analytical outputs to the **reports** directory.
 
-Examples include:
+Generated files include:
 
 - Continuous Frequency Table
 - Career Satisfaction Frequency Table
@@ -184,30 +197,54 @@ Examples include:
 
 # Visualizations
 
-The project automatically exports publication-ready figures.
+## Weekly Study Hours Distribution
 
-Examples include:
+<p align="center">
 
-- Weekly Study Hours Histogram
-- Career Satisfaction Bar Chart
-- Weekly Study Hours Boxplot
+<!-- study_hours_histogram.png -->
 
-*(Images will be displayed here.)*
+</p>
+
+---
+
+## Career Satisfaction
+
+<p align="center">
+
+<!-- career_satisfaction_bar_chart.png -->
+
+</p>
+
+---
+
+## Weekly Study Hours Boxplot
+
+<p align="center">
+
+<!-- study_hours_boxplot.png -->
+
+</p>
 
 ---
 
 # Technologies
 
+Programming Language
+
 - R
+
+Libraries
+
 - readxl
 - here
 
 Statistical Techniques
 
 - Descriptive Statistics
-- Probability Distributions
-- Statistical Inference
+- Inferential Statistics
+- Probability Theory
 - Sampling Theory
+- Data Visualization
 
 ---
 
@@ -217,7 +254,7 @@ Clone the repository.
 
 Open the project using RStudio.
 
-Run the scripts in the following order:
+Execute the scripts in the following order:
 
 ```text
 01_data_import.R
@@ -231,33 +268,31 @@ Run the scripts in the following order:
 05_visualizations.R
 ```
 
-All reports and visualizations are generated automatically.
+The analysis automatically generates reports and visualizations.
 
 ---
 
 # Future Improvements
 
-Potential future enhancements include:
+Potential future extensions include:
 
 - Interactive dashboards using Shiny
+- Automated reporting with R Markdown
 - Additional statistical models
+- Interactive visualizations
 - Predictive analytics
-- Automated report generation with R Markdown
-- Interactive visualizations using Plotly
 
 ---
 
 # Author
 
 **Jorgelina Etchevest**
-Economist transitioning into Data Analytics.
 
-Currently building a professional portfolio focused on:
+Economist | Data Analytics.
+
+Portfolio focused on:
+
 - Data Analytics
 - Business Intelligence
 - Machine Learning
 - Statistical Analysis
-
----
-
-⭐ If you found this project interesting, consider giving it a star.
