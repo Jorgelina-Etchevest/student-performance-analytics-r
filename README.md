@@ -5,53 +5,55 @@ Applying descriptive and inferential statistical techniques in R to analyze educ
 ---
 
 <p align="center">
-<b>PROJECT BANNER</b>
-
-<!-- Replace with project_banner.png -->
+  <img src="images/banner.png" alt="Student Performance Analytics with R Banner" width="100%">
 </p>
 
 ---
 
 # Project Overview
 
-Educational institutions continuously collect information about their students; however, transforming raw data into meaningful insights requires a structured statistical analysis process.
+Educational institutions continuously collect valuable information about their students. However, raw data alone provides limited value unless it is transformed into meaningful insights through statistical analysis.
 
-This project demonstrates how R can be used to perform descriptive statistics, probability modeling, sampling analysis, and data visualization using a real-world educational dataset.
+This project presents a complete analytical workflow developed in **R**, applying descriptive statistics, probability models, sampling techniques, and data visualization to explore a real educational dataset.
 
-The objective is not only to calculate statistical measures but also to organize the complete workflow as a reproducible data analytics project following professional software development practices.
+Rather than focusing on isolated statistical exercises, the project was designed as a **reproducible analytics solution**, following the same organizational principles commonly used in professional data analysis projects.
 
 ---
 
 # Business Problem
 
-Educational organizations need reliable statistical evidence to understand student characteristics, study habits, and satisfaction levels.
+Educational organizations frequently need reliable statistical evidence to better understand student characteristics, academic behavior, and satisfaction levels.
 
-This project applies descriptive and inferential statistical methods to answer questions such as:
+Questions such as:
 
 - How much time do students dedicate to studying?
-- What is the overall satisfaction level?
+- How satisfied are students with their academic programs?
 - How representative are random samples?
-- How can probability models support decision making?
+- Can statistical models support evidence-based decisions?
+
+require more than descriptive reports—they require a structured statistical workflow.
+
+This project demonstrates how R can be used to answer these questions through reproducible statistical analysis.
 
 ---
 
 # Project Objectives
 
-- Import and prepare raw data using R.
+- Import and prepare educational data.
 - Perform descriptive statistical analysis.
 - Apply probability distributions.
-- Evaluate sampling accuracy.
-- Generate statistical reports automatically.
-- Produce publication-ready visualizations.
-- Organize the complete analysis as a reproducible project.
+- Evaluate sampling techniques.
+- Generate automated statistical reports.
+- Produce publication-quality visualizations.
+- Organize the entire workflow following professional data analytics practices.
 
 ---
 
 # Dataset
 
-The dataset contains information collected from **250 university students**.
+The analysis uses a dataset containing information from **250 university students**.
 
-Variables include:
+The dataset includes variables such as:
 
 - Age
 - Gender
@@ -59,55 +61,23 @@ Variables include:
 - Weight
 - Weekly study hours
 - Weekly food expenses
-- Approved courses
+- Number of approved courses
 - Career satisfaction
-- Employment status
 - Smoking habits
+- Employment status
 - Number of siblings
 
 ---
 
 # Analytical Workflow
 
-```text
-Student Survey Dataset
+<p align="center">
+  <img src="images/workflow.png" alt="Project Workflow" width="90%">
+</p>
 
-        │
+The project follows a modular workflow designed to ensure reproducibility and maintainability.
 
-        ▼
-
-Data Import
-
-        │
-
-        ▼
-
-Descriptive Statistics
-
-        │
-
-        ▼
-
-Probability Models
-
-        │
-
-        ▼
-
-Sampling Analysis
-
-        │
-
-        ▼
-
-Data Visualization
-
-        │
-
-        ▼
-
-Reports
-```
+Each stage of the analysis is implemented in an independent R script, allowing the entire project to be executed sequentially while automatically generating reports and visualizations.
 
 ---
 
@@ -131,7 +101,9 @@ student-performance-analytics-r/
 │     Generated CSV reports
 │
 ├── images/
-│     Generated visualizations
+│     Project banner
+│     Workflow
+│     Generated charts
 │
 └── README.md
 ```
@@ -142,47 +114,69 @@ student-performance-analytics-r/
 
 ## Descriptive Statistics
 
+The project computes descriptive statistical measures including:
+
 - Frequency distributions
 - Measures of central tendency
 - Measures of dispersion
 - Quartiles
 
+---
+
 ## Probability Models
+
+Three probability distributions are implemented:
 
 - Binomial Distribution
 - Poisson Distribution
 - Normal Distribution
 
-## Sampling Analysis
-
-- Simple Random Sampling
-- Population vs Sample Comparison
-- Sampling Mean Estimation
-
-## Data Visualization
-
-- Histogram
-- Boxplot
-- Bar Chart
+These models demonstrate practical applications of inferential statistics for educational data.
 
 ---
 
-# Key Results
+## Sampling Analysis
 
-The statistical analysis identified several relevant findings:
+A Simple Random Sampling approach is applied to evaluate how accurately sample statistics estimate population parameters.
+
+The analysis compares:
+
+- Population Mean
+- Sample Means
+- Sampling Variability
+
+This section illustrates one of the fundamental concepts of statistical inference.
+
+---
+
+## Data Visualization
+
+The project automatically generates publication-ready figures, including:
+
+- Histogram
+- Bar Chart
+- Boxplot
+
+All visualizations are exported automatically to the **images** directory.
+
+---
+
+# Key Findings
+
+The statistical analysis provides several relevant insights.
 
 - Most students dedicate between **9 and 13 hours per week** to studying.
 - Career satisfaction is predominantly classified as **Very Satisfied**.
-- Random samples accurately estimate the population mean.
-- Probability models demonstrate practical applications of inferential statistics.
+- Random sampling produces estimates that closely approximate the population mean.
+- Probability distributions illustrate how uncertainty can be modeled using real educational data.
 
 ---
 
 # Generated Reports
 
-The project automatically exports analytical outputs to the **reports** directory.
+The analytical pipeline automatically exports statistical outputs in CSV format.
 
-Generated files include:
+Generated reports include:
 
 - Continuous Frequency Table
 - Career Satisfaction Frequency Table
@@ -193,6 +187,8 @@ Generated files include:
 - Sampling Results
 - Sampling Summary
 
+Future versions of the project will also include a complete statistical report in PDF format.
+
 ---
 
 # Visualizations
@@ -200,9 +196,7 @@ Generated files include:
 ## Weekly Study Hours Distribution
 
 <p align="center">
-
-<!-- study_hours_histogram.png -->
-
+  <img src="images/study_hours_histogram.png" width="75%">
 </p>
 
 ---
@@ -210,9 +204,7 @@ Generated files include:
 ## Career Satisfaction
 
 <p align="center">
-
-<!-- career_satisfaction_bar_chart.png -->
-
+  <img src="images/career_satisfaction_bar_chart.png" width="75%">
 </p>
 
 ---
@@ -220,25 +212,23 @@ Generated files include:
 ## Weekly Study Hours Boxplot
 
 <p align="center">
-
-<!-- study_hours_boxplot.png -->
-
+  <img src="images/study_hours_boxplot.png" width="60%">
 </p>
 
 ---
 
 # Technologies
 
-Programming Language
+### Programming Language
 
 - R
 
-Libraries
+### Libraries
 
 - readxl
 - here
 
-Statistical Techniques
+### Statistical Techniques
 
 - Descriptive Statistics
 - Inferential Statistics
@@ -248,11 +238,27 @@ Statistical Techniques
 
 ---
 
+# Project Reproducibility
+
+The project was organized following a modular structure to ensure reproducibility.
+
+Executing the scripts sequentially automatically generates:
+
+- Statistical summaries
+- Frequency tables
+- Probability analyses
+- Sampling results
+- Visualizations
+
+No manual modification of intermediate files is required.
+
+---
+
 # How to Run
 
 Clone the repository.
 
-Open the project using RStudio.
+Open the project using **RStudio**.
 
 Execute the scripts in the following order:
 
@@ -268,31 +274,33 @@ Execute the scripts in the following order:
 05_visualizations.R
 ```
 
-The analysis automatically generates reports and visualizations.
+All reports and visualizations are generated automatically.
 
 ---
 
 # Future Improvements
 
-Potential future extensions include:
+Potential future developments include:
 
 - Interactive dashboards using Shiny
-- Automated reporting with R Markdown
-- Additional statistical models
+- Automated reports with R Markdown
+- Additional statistical techniques
 - Interactive visualizations
-- Predictive analytics
+- Predictive models using machine learning
 
 ---
 
-# Author
+# About the Author
 
 **Jorgelina Etchevest**
 
-Economist | Data Analytics.
+Economist | Data Analytics 
 
-Portfolio focused on:
+Current areas of interest include:
 
 - Data Analytics
 - Business Intelligence
-- Machine Learning
 - Statistical Analysis
+- Machine Learning
+
+For additional projects, please visit my GitHub profile.
