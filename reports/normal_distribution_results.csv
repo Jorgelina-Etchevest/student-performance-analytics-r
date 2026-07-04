@@ -1,0 +1,4 @@
+"Scenario","Result"
+"Height greater than or equal to 179 cm",0.0137
+"Height between 147 cm and 172 cm",0.8681
+"Height value exceeding 97.5% of observations",177.3937

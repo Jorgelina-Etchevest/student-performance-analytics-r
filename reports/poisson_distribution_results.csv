@@ -1,0 +1,4 @@
+"Scenario","Probability"
+"At least 6 queries in 20 minutes",0.9329
+"At most 12 queries in 40 minutes",0.039
+"More than 7 and less than 10 queries in 30 minutes",0.0519

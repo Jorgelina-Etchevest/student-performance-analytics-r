@@ -1,0 +1,5 @@
+"Scenario","Probability"
+"More than 9 very satisfied students",0.4354
+"Between 4 and 8 satisfied students",0.7369
+"Less than 5 dissatisfied students",0.9974
+"Exactly 10 very dissatisfied students",0
