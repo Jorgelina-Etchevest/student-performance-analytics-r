@@ -191,6 +191,33 @@ Future versions of the project will also include a complete statistical report i
 
 ---
 
+# Project Outputs
+
+Executing the analytical pipeline automatically generates the following project artifacts:
+
+### Statistical Reports
+
+- Frequency tables
+- Descriptive statistics
+- Probability model results
+- Sampling analysis summaries
+
+### Visual Assets
+
+- Project banner
+- Analytical workflow diagram
+- Histogram
+- Bar chart
+- Boxplot
+
+### Reproducible Analysis
+
+The project is organized as a modular analytical pipeline where each script performs a specific stage of the statistical analysis.
+
+Running the scripts sequentially reproduces the complete analytical workflow, including data preparation, statistical calculations, report generation, and visualization outputs.
+
+---
+
 # Visualizations
 
 ## Weekly Study Hours Distribution
